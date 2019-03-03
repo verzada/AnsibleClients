@@ -2,6 +2,9 @@
   gather_facts: no
   tasks:
   - win_chocolatey:
+      name: chocolatey
+      state: present  
+  - win_chocolatey:
       name: procexp
       state: present
   - win_chocolatey:
