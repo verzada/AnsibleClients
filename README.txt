@@ -7,8 +7,7 @@ To easily copy it, choose to see the RAW file
 https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1
 
 
-
-ansible side:
+Ansible side:
 
 sudo pip install pywinrm
 update hosts file
@@ -20,6 +19,10 @@ Output:
     "changed": false,
     "ping": "pong"
 }
+
+Possible issues if the ping is not successfull:
+Check if it's possible to do a normal 'ping' the host and server from eachother.
+If the ping isn't successfull, it's most likely a firewall issue where both the ansible server and host must be configured to allow traffic between them.
 
 run 
 ansible-playbook -i hosts choco.yaml
