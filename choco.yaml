@@ -1,16 +1,25 @@
 - hosts: dev
   gather_facts: no
   tasks:
-  - win_chocolatey:
-      name: chocolatey
-      state: present  
-  - win_chocolatey:
-      name: procexp
-      state: present
-  - win_chocolatey:
-      name: notepadplusplus
-      state: present    
-  - win_chocolatey:
-      name: visualstudio2017enterprise
-      state: present    
-    
+   - win_chocolatey:
+        name: procexp
+        state: present
+   - win_chocolatey:
+        name: notepadplusplus
+        state: present    
+   - win_chocolatey:
+        name: visualstudio2017enterprise
+        package_params: --allWorkloads --includeRecommended --includeOptional --passive --locale en-US 
+        state: present
+   - win_chocolatey:
+        name: visualstudio2017-workload-data
+        state: present
+   - win_chocolatey:
+        name: visualstudio2017-workload-netcoretools
+        state: present
+   - win_chocolatey:
+        name: visualstudio2017-workload-netweb
+        state: present
+   - win_chocolatey:
+        name:  visualstudio2017-workload-node
+        state: present
