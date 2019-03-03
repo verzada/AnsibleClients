@@ -10,16 +10,20 @@
    - win_chocolatey:
         name: visualstudio2017enterprise
         package_params: --allWorkloads --includeRecommended --includeOptional --passive --locale en-US 
-        state: present
+        state: latest
    - win_chocolatey:
         name: visualstudio2017-workload-data
+        package_params: --includeRecommended
         state: present
    - win_chocolatey:
         name: visualstudio2017-workload-netcoretools
+        package_params: --includeRecommended
         state: present
    - win_chocolatey:
         name: visualstudio2017-workload-netweb
+        package_params: --includeRecommended
         state: present
    - win_chocolatey:
         name:  visualstudio2017-workload-node
+        package_params: --includeRecommended
         state: present
