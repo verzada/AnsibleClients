@@ -10,7 +10,7 @@ https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemoting
 Ansible side:
 
 sudo pip install pywinrm
-update hosts file
+update hosts file with ip's or hostnames 
 ansible dev -i hosts -m win_ping -vvvv
 
 Output:
