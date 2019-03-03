@@ -1,0 +1,13 @@
+- hosts: dev
+  gather_facts: no
+  tasks:
+  - win_chocolatey:
+      name: procexp
+      state: present
+  - win_chocolatey:
+      name: notepadplusplus
+      state: present    
+  - win_chocolatey:
+      name: visualstudio2017enterprise
+      state: present    
+    

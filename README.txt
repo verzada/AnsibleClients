@@ -21,3 +21,5 @@ Output:
     "ping": "pong"
 }
 
+run 
+ansible-playbook -i hosts choco.yaml
