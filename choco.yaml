@@ -27,3 +27,14 @@
         name:  visualstudio2017-workload-node
         package_params: --includeRecommended
         state: present
+   - win_chocolatey:
+        name:  resharper
+        state: present
+   - win_chocolatey:
+        name:  dotcover
+        state: present
+   - win_chocolatey:
+        name:  dotpeek
+        state: present       
+      
+        

@@ -2,10 +2,12 @@ Following this youtube clip:
 https://www.youtube.com/watch?v=FEdXUv02Dbg
 
 Host side:
-Run this powershell script on the host
+First set powershell execution policy as admin:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+then
+run the ansible script (see link below) as admin
 To easily copy it, choose to see the RAW file
 https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1
-
 
 Ansible side:
 
