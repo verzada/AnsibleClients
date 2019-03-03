@@ -25,4 +25,6 @@ Check if it's possible to do a normal 'ping' the host and server from eachother.
 If the ping isn't successfull, it's most likely a firewall issue where both the ansible server and host must be configured to allow traffic between them.
 
 run 
+ansible-playbook -i hosts choco.yaml -vvv
+or
 ansible-playbook -i hosts choco.yaml -vvvv
