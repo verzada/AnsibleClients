@@ -1,6 +1,9 @@
 Following this youtube clip:
 https://www.youtube.com/watch?v=FEdXUv02Dbg
 
+Firewall settings for VirtuaBox:
+https://serverfault.com/questions/225155/virtualbox-how-to-set-up-networking-so-both-host-and-guest-can-access-internet
+
 Host side:
 First set powershell execution policy as admin:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
