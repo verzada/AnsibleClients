@@ -1,6 +1,9 @@
 Following this youtube clip:
 https://www.youtube.com/watch?v=FEdXUv02Dbg
 
+Setup for sources:
+https://www.cyberciti.biz/faq/how-to-install-and-configure-latest-version-of-ansible-on-ubuntu-linux/
+
 Firewall settings for VirtuaBox:
 https://serverfault.com/questions/225155/virtualbox-how-to-set-up-networking-so-both-host-and-guest-can-access-internet
 
