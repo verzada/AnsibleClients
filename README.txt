@@ -13,7 +13,7 @@ To easily copy it, choose to see the RAW file
 https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1
 
 Ansible side:
-
+sudo apt-get install python-pip
 sudo pip install pywinrm
 update hosts file with ip's or hostnames 
 ansible dev -i hosts -m win_ping -vvvv
